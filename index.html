@@ -9,162 +9,166 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-indigo-50">
-    <main class="bg-[url('./Assets/Photos/mainBackground.png')] h-screen">
+    <main class="bg-[url('./Assets/Photos/mainBackground.png')] h-screen relative">
     <div class="h-screen w-full backdrop-brightness-50">
-        <nav class="text-slate-300 flex w-full justify-between items-center px-24">
-            <img src="./Assets/Icons/Logo.svg" alt="" class="w-28 h-20">
-            <ul class="flex justify-center items-center gap-12 list-none">
-            <li>Location</li>
-            <li>Blogs</li>
-            <li>Testimonials</li>
-            <li>Contact</li>
+        <nav class="text-slate-300 flex w-full justify-between items-center lg:px-24 md:px-12 px-6">
+            <img src="./Assets/Icons/Logo.svg" alt="" class="md:w-28 md:h-20 w-20 h-16">
+            <ul class="flex justify-center items-center lg:gap-12 md:gap-8 gap-4 lg:text-base md:text-sm text-xs list-none">
+                <li>Location</li>
+                <li>Blogs</li>
+                <li>Testimonials</li>
+                <li>Contact</li>
            </ul>
         </nav>
-        <hr class="w-11/12 m-auto">
-        <section class="text-white py-20 flex gap-20 px-24">
-        <div class="w-1/2 flex flex-col gap-6">
-            <h1 class="w-10/12 text-5xl font-semibold">Home That Makes You Living Life!</h1>
-            <p class="w-7/12 text-neutral-300 text-sm">Are you looking for amazing Real estate? Don't worry! We got it for you!</p>
-            <div>
-                <button class="px-9 py-3 text-white bg-indigo-500 rounded-full">Learn More</button>
+        <hr class="md:w-11/12 w-10/12 m-auto">
+        <section class="text-white py-20 flex gap-20 lg:px-24 px-16">
+            <div class="lg:w-1/2 flex flex-col gap-6">
+                <h1 class="lg:w-10/12 md:w-9/12 w-11/12 md:text-5xl text-4xl font-semibold">Home That Makes You Living Life!</h1>
+                <p class="w-7/12 text-neutral-300 text-sm">Are you looking for amazing Real estate? Don't worry! We got it for you!</p>
+                <div>
+                    <button class="px-9 py-3 text-white bg-indigo-500 rounded-full">Learn More</button>
+                </div>
             </div>
+    </section>
+    <section class="absolute bottom-[-45px] w-11/12 lg:ml-16 md:ml-8 ml-4">
+        <div class="bg-white flex justify-between px-12 py-6 rounded-3xl">
+            <img src="./Assets/Icons/logoName.svg" alt="Logo Name" class="lg:w-36 md:w-24 w-12">
+            <img src="./Assets/Icons/logoName.svg" alt="Logo Name" class="lg:w-36 md:w-24 w-12">
+            <img src="./Assets/Icons/logoName.svg" alt="Logo Name" class="lg:w-36 md:w-24 w-12">
+            <img src="./Assets/Icons/logoName.svg" alt="Logo Name" class="lg:w-36 md:w-24 w-12">
+            <img src="./Assets/Icons/logoName.svg" alt="Logo Name" class="lg:w-36 md:w-24 w-12">
         </div>
-    </div>
     </section>
     </main>
-    <section class="absolute top-[550px] left-16">
-        <div class="bg-white flex justify-between gap-16 px-12 py-6 rounded-3xl">
-            <img src="./Assets/Icons/logoName.svg" alt="Logo Name">
-            <img src="./Assets/Icons/logoName.svg" alt="Logo Name">
-            <img src="./Assets/Icons/logoName.svg" alt="Logo Name">
-            <img src="./Assets/Icons/logoName.svg" alt="Logo Name">
-            <img src="./Assets/Icons/logoName.svg" alt="Logo Name">
-        </div>
-    </section>
-    <section class="px-20 py-20">
-        <h1 class="w-1/5 m-auto text-3xl text-black font-semibold text-center">Our Best Estate, are Modern!</h1>
-        <div class="flex justify-center gap-6 mt-20">
-            <div class="relative bottom-12">
-                <img src="./Assets/Photos/cardImage1.png" alt="" class="rounded-2xl h-[300px] w-[300px]">
-                    <div class="bg-white px-5 py-4 rounded-2xl flex justify-between w-9/12 absolute bottom-[-30px] left-[40px]">
-                        <div><h2>Mixtownia</h2>
-                        <p>$205,500</p></div>
+
+    <section class="lg:px-20 md:px-10 px-6 pt-20 md:pb-52">
+        <h1 class="lg:w-1/5 md:w-1/3 m-auto text-3xl text-black font-semibold text-center">Our Best Estate, are Modern!</h1>
+        <!-- <div class="flex justify-center lg:gap-6 md:gap-4 mt-20"> -->
+        <div class="grid md:grid-cols-3 md:grid-rows-3 grid-cols-2 grid-rows-5 gap-x-6 md:gap-y-16 gap-y-24 justify-items-center">    
+            <div class="relative md:top-12 top-6">
+                <img src="./Assets/Photos/cardImage1.png" alt="" class="rounded-2xl lg:h-[300px] lg:w-[300px] h-[250px] w-[280px]">
+                    <div class="bg-white px-5 py-4 rounded-2xl flex justify-between gap-2 lg:w-9/12 w-11/12 absolute lg:bottom-[-30px] lg:left-[40px] bottom-[-40px] left-[10px]">
+                        <div class="md:text-base text-sm">
+                            <h2>Mixtownia</h2>
+                            <p>$205,500</p>
+                        </div>
                         <button class="px-5 py-2 text-white bg-indigo-500 rounded-3xl">Detail</button>
                     </div>
                 </img>
             </div>
-            <div class="relative bottom-6">
-                <img src="./Assets/Photos/cardImage2.png" alt="" class="rounded-2xl h-[300px] w-[300px]">
-                    <div class="bg-white px-5 py-4 rounded-2xl flex justify-between w-9/12 absolute bottom-[-30px] left-[40px]">
-                        <div><h2>Mirtawan</h2>
+            <div class="relative md:top-[4.5rem] top-12">
+                <img src="./Assets/Photos/cardImage2.png" alt="" class="rounded-2xl lg:h-[300px] lg:w-[300px] h-[250px] w-[280px]">
+                    <div class="bg-white px-5 py-4 rounded-2xl flex justify-between gap-2 lg:w-9/12 w-11/12 absolute lg:bottom-[-30px] lg:left-[40px] bottom-[-40px] left-[10px]">
+                        <div class="md:text-base text-sm"><h2>Mirtawan</h2>
                         <p>$102,200</p></div>
                         <button class="px-5 py-2 text-white bg-indigo-500 rounded-3xl">Detail</button>
                     </div>
                 </img>
             </div>
-            <div class="relative">
-                <img src="./Assets/Photos/cardImage3.png" alt="" class="rounded-2xl h-[300px] w-[300px]">
-                    <div class="bg-white px-5 py-4 rounded-2xl flex justify-between w-9/12 absolute bottom-[-30px] left-[40px]">
-                        <div><h2>Wartawan</h2>
+            <div class="relative md:top-24 top-12">
+                <img src="./Assets/Photos/cardImage3.png" alt="" class="rounded-2xl lg:h-[300px] lg:w-[300px] h-[250px] w-[280px]">
+                    <div class="bg-white px-5 py-4 rounded-2xl flex justify-between gap-2 lg:w-9/12 w-11/12 absolute lg:bottom-[-30px] lg:left-[40px] bottom-[-40px] left-[10px]">
+                        <div class="md:text-base text-sm"><h2>Wartawan</h2>
                         <p>$135,900</p></div>
                         <button class="px-5 py-2 text-white bg-indigo-500 rounded-3xl">Detail</button>
                     </div>
                 </img>
             </div>
-        </div>
-        <div class="flex justify-center gap-6 mt-16">
-        <div class="relative top-12">
-            <img src="./Assets/Photos/cardImage4.png" alt="" class="rounded-2xl h-[300px] w-[300px]">
-                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between w-9/12 absolute bottom-[-30px] left-[40px]">
-                    <div><h2>Mixtownia</h2>
+        <!-- </div>
+        <div class="flex justify-center gap-6 mt-16"> -->
+        <div class="relative md:top-36 top-6">
+            <img src="./Assets/Photos/cardImage4.png" alt="" class="rounded-2xl lg:h-[300px] lg:w-[300px] h-[250px] w-[280px]">
+                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between gap-2 lg:w-9/12 w-11/12 absolute lg:bottom-[-30px] lg:left-[40px] bottom-[-40px] left-[10px]">
+                    <div class="md:text-base text-sm"><h2>Mixtownia</h2>
                     <p>$205,500</p></div>
                     <button class="px-5 py-2 text-white bg-indigo-500 rounded-3xl">Detail</button>
                 </div>
             </img>
         </div>
-        <div class="relative top-6">
-            <img src="./Assets/Photos/cardImage5.png" alt="" class="rounded-2xl h-[300px] w-[300px]">
-                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between w-9/12 absolute bottom-[-30px] left-[40px]">
-                    <div><h2>Mirtawan</h2>
+        <div class="relative md:top-[7.5rem] top-6">
+            <img src="./Assets/Photos/cardImage5.png" alt="" class="rounded-2xl lg:h-[300px] lg:w-[300px] h-[250px] w-[280px]">
+                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between gap-2 lg:w-9/12 w-11/12 absolute lg:bottom-[-30px] lg:left-[40px] bottom-[-40px] left-[10px]">
+                    <div class="md:text-base text-sm"><h2>Mirtawan</h2>
                     <p>$102,200</p></div>
                     <button class="px-5 py-2 text-white bg-indigo-500 rounded-3xl">Detail</button>
                 </div>
             </img>
         </div>
-        <div class="relative">
-            <img src="./Assets/Photos/cardImage6.png" alt="" class="rounded-2xl h-[300px] w-[300px]">
-                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between w-9/12 absolute bottom-[-30px] left-[40px]">
-                    <div><h2>Wartawan</h2>
+        <div class="relative md:top-24 top-12">
+            <img src="./Assets/Photos/cardImage6.png" alt="" class="rounded-2xl lg:h-[300px] lg:w-[300px] h-[250px] w-[280px]">
+                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between gap-2 lg:w-9/12 w-11/12 absolute lg:bottom-[-30px] lg:left-[40px] bottom-[-40px] left-[10px]">
+                    <div class="md:text-base text-sm"><h2>Wartawan</h2>
                     <p>$135,900</p></div>
                     <button class="px-5 py-2 text-white bg-indigo-500 rounded-3xl">Detail</button>
                 </div>
             </img>
         </div>
-    </div><div class="flex justify-center gap-6 mt-40">
-        <div class="relative bottom-12">
-            <img src="./Assets/Photos/cardImage7.png" alt="" class="rounded-2xl h-[300px] w-[300px]">
-                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between w-9/12 absolute bottom-[-30px] left-[40px]">
-                    <div><h2>Mixtownia</h2>
+    <!-- </div><div class="flex justify-center gap-6 mt-40"> -->
+        <div class="relative md:top-36 top-12">
+            <img src="./Assets/Photos/cardImage7.png" alt="" class="rounded-2xl lg:h-[300px] lg:w-[300px] h-[250px] w-[280px]">
+                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between gap-2 lg:w-9/12 w-11/12 absolute lg:bottom-[-30px] lg:left-[40px] bottom-[-40px] left-[10px]">
+                    <div class="md:text-base text-sm"><h2>Mixtownia</h2>
                     <p>$205,500</p></div>
                     <button class="px-5 py-2 text-white bg-indigo-500 rounded-3xl">Detail</button>
                 </div>
             </img>
         </div>
-        <div class="relative bottom-6">
-            <img src="./Assets/Photos/cardImage8.png" alt="" class="rounded-2xl h-[300px] w-[300px]">
-                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between w-9/12 absolute bottom-[-30px] left-[40px]">
-                    <div><h2>Mirtawan</h2>
+        <div class="relative md:top-[10.5rem] top-6">
+            <img src="./Assets/Photos/cardImage8.png" alt="" class="rounded-2xl lg:h-[300px] lg:w-[300px] h-[250px] w-[280px]">
+                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between gap-2 lg:w-9/12 w-11/12 absolute lg:bottom-[-30px] lg:left-[40px] bottom-[-40px] left-[10px]">
+                    <div class="md:text-base text-sm"><h2>Mirtawan</h2>
                     <p>$102,200</p></div>
                     <button class="px-5 py-2 text-white bg-indigo-500 rounded-3xl">Detail</button>
                 </div>
             </img>
         </div>
-        <div class="relative">
-            <img src="./Assets/Photos/cardImage9.png" alt="" class="rounded-2xl h-[300px] w-[300px]">
-                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between w-9/12 absolute bottom-[-30px] left-[40px]">
-                    <div><h2>Wartawan</h2>
+        <div class="relative md:top-48 top-6">
+            <img src="./Assets/Photos/cardImage9.png" alt="" class="rounded-2xl lg:h-[300px] lg:w-[300px] h-[250px] w-[280px]">
+                <div class="bg-white px-5 py-4 rounded-2xl flex justify-between gap-2 lg:w-9/12 w-11/12 absolute lg:bottom-[-30px] lg:left-[40px] bottom-[-40px] left-[10px]">
+                    <div class="md:text-base text-sm"><h2>Wartawan</h2>
                     <p>$135,900</p></div>
                     <button class="px-5 py-2 text-white bg-indigo-500 rounded-3xl">Detail</button>
                 </div>
             </img>
         </div>
-    </div>
+    <!-- </div> -->
+</div>
     </section>
     <section class="py-24">
-    <div class="flex">
-        <div class="w-1/2 relative mb-16">
-            <img src="./Assets/Icons/featureImageBg1.svg" alt="" class="relative top-11">
-            <img src="./Assets/Photos/featuresImage1.png" alt="" class="w-9/12 h-[450px] rounded-[2.5rem] absolute top-0 left-[105px]">
+    <div class="flex gap-12">
+        <div class="lg:w-1/2 relative mb-16">
+            <img src="./Assets/Icons/featureImageBg1.svg" alt="" class="relative top-11 lg:w-full md:w-5/6 w-[800px]">
+            <img src="./Assets/Photos/featuresImage1.png" alt="" class="w-9/12 h-5/6 rounded-[2.5rem] absolute lg:top-0 md:top-8 top-4 lg:left-24 md:left-16 left-10">
         </div>
-        <div class="flex flex-col justify-center gap-2">
-            <h2 class="w-7/12 text-4xl font-bold">Modern, Trendy, Affordable!</h2>
-            <p class="w-8/12 text-neutral-500 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum autem illo commodi blanditiis!</p>
-            <div><button class="mt-3 px-8 py-2 text-white bg-indigo-500 rounded-3xl">Early Bird Book</button></div>
+        <div class="flex flex-col justify-center gap-2 pr-10">
+            <h2 class="md:w-7/12 md:text-4xl text-xl font-bold">Modern, Trendy, Affordable!</h2>
+            <p class="md:w-8/12 text-neutral-500 md:text-sm text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum autem illo commodi blanditiis!</p>
+            <div><button class="mt-3 md:px-8 md:py-2 px-4 py-1 text-white bg-indigo-500 rounded-3xl">Early Bird Book</button></div>
         </div>
     </div>
-    <div class="flex">
-        <div class="flex flex-col justify-center gap-2 ml-32">
-            <h2 class="w-7/12 text-4xl font-bold">Unique House for Long Term!</h2>
-            <p class="w-8/12 text-neutral-500 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum autem illo commodi blanditiis!</p>
-            <div><button class="mt-3 px-8 py-2 text-white bg-indigo-500 rounded-3xl">Early Bird Book</button></div>
+    <div class="flex gap-12">
+        <div class="flex flex-col justify-center gap-2 md:ml-32 ml-20">
+            <h2 class="md:w-7/12 md:text-4xl text-xl font-bold">Unique House for Long Term!</h2>
+            <p class="md:w-8/12 text-neutral-500 md:text-sm text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti harum autem illo commodi blanditiis!</p>
+            <div><button class="mt-3 md:px-8 md:py-2 px-4 py-1 text-white bg-indigo-500 rounded-3xl">Early Bird Book</button></div>
         </div>
-        <div class="w-1/2 relative">
-            <img src="./Assets/Icons/featureImageBg2.png" alt="" class="relative top-24">
-            <img src="./Assets/Photos/featuresImage2.png" alt="" class="w-9/12 h-[450px] rounded-[2.5rem] absolute top-0 right-[95px]">
+        <div class="lg:w-1/2 relative">
+            <img src="./Assets/Icons/featureImageBg2.png" alt="" class="relative top-11 lg:w-full md:w-5/6 w-[800px]">
+            <img src="./Assets/Photos/featuresImage2.png" alt="" class="w-9/12 md:h-5/6 h-[150px] rounded-[2.5rem] absolute lg:top-0 md:top-8 top-4 lg:right-24 md:right-16 right-10">
         </div>   
     </div>
     </section>
-    <section class="px-24 py-10">
+    <section class="lg:px-24 px-6 py-10">
         <div class="bg-indigo-500 text-white rounded-[3.5rem] py-12 flex flex-col justify-center items-center gap-8">
-            <h2 class="w-1/2 text-center text-4xl font-semibold">Subscribe to Our Newsletter For Weekly Article Update.</h2>
-            <p class="w-1/2 text-center text-sm text-neutral-200">We have real estate-related blog so we can share our thought and rutinity in our blog that updated weekly. We will not spam you, we promise.</p>
-            <div>
+            <h2 class="lg:w-1/2 w-10/12 text-center lg:text-4xl text-2xl font-semibold">Subscribe to Our Newsletter For Weekly Article Update.</h2>
+            <p class="lg:w-1/2 w-9/12 text-center md:text-sm text-xs text-neutral-200">We have real estate-related blog so we can share our thought and rutinity in our blog that updated weekly. We will not spam you, we promise.</p>
+            <div class="flex lg:flex-row flex-col justify-center items-center gap-4">
                 <input type="text" name="email" placeholder="Enter your e-mail address" class="bg-[url('./Assets/Icons/mail.png')] bg-no-repeat bg-left pl-25 bg-[20px] bg-neutral-500 bg-opacity-25 px-16 py-2 rounded-3xl">
-                <button class="ml-4 px-8 py-2 text-indigo-500 font-semibold bg-white rounded-3xl">Subscribe</button>
+                <button class="px-8 py-2 text-indigo-500 font-semibold bg-white rounded-3xl">Subscribe</button>
             </div>
         </div>
     </section>
-    <footer class="text-neutral-600 px-32 py-10 flex justify-between">
+    <footer class="text-neutral-600 lg:px-32 px-8 py-10 flex lg:flex-row flex-col lg:justify-between">
         <div>
             <img src="./Assets/Icons/Logo.svg" alt="" class="w-28 h-16">
             <img src="./Assets/Icons/facebook.png" alt="" class="inline-block w-8 h-8">
@@ -172,7 +176,7 @@
             <img src="./Assets/Icons/instagram.png" alt="" class="inline-block w-8 h-8 ml-2">
             <p class="text-xs mt-6">2022 Award wining Real estate<br>and Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="grid grid-cols-3 grid-rows-5 gap-x-24 gap-y-2">
+        <div class="grid grid-cols-3 grid-rows-5 lg:gap-x-24 lg:gap-y-2 gap-1 lg:mt-0 mt-16">
             <span class="font-semibold">Location</span>
             <span class="font-semibold">Conatact</span>
             <span class="font-semibold">Legals</span>

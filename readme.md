@@ -17,3 +17,7 @@ This webpage titled Real Estate Landing Page is made using HTML and Tailwind CSS
  * ## Output:
 
    ![](./Assets/output.gif)
+
+ * ## Mobile Responsive:
+
+   ![](./Assets/Mobile%20Output.gif)
